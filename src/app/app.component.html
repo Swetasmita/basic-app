@@ -1,0 +1,19 @@
+<!--View of the application -->
+
+<h1 class="bg-primary">{{title}}</h1> 
+
+<div style="margin-left: 30px; margin-right: 10px;">
+    <!--Bootstrap colors - .text-primary,.text-success,.text-info-->
+ <h3 class="text-info">{{subTitle}}</h3>
+
+ <!-- Examples of Property binding -  InnerHtml , ngClass, placeholder -->
+<p [innerHTML] ='Intro'><b></b></p>
+<div [ngClass]="'c1'">Setting Class for Property Binding</div> <br/>
+<input (focus)="consoleLog()"  [placeholder]='placeholderValue'/> &nbsp;
+<a [href]="hrefVal">angular w3schools</a>
+
+</div>
+<br/>
+<app-test></app-test>
+
+<router-outlet></router-outlet>

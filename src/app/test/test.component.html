@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Angular Tutorials</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="contaier" style="margin-left: 30px;">
+<!--Test Component -->
+<p [ngStyle]="{color:mycolor}"><b>This is from my test component</b></p>
+
+<!--Interploation -->
+<p [style.color]="changeColor">Welcome: {{username}}</p> &nbsp; &nbsp;
+<img [src]="Logo" width="200" height="150">
+
+<br><br>
+<!--Property Binding -->
+ <input type="text" [disabled]="disableBox" [value]="name" />
+ &nbsp;
+
+<button  class= "btn btn-success" (click)="clickEvent()">Try me</button>
+<br><br>
+<!--Event Binding-->
+<!--The current user is type Admin-->
+<button class="btn btn-danger" (click)="clickMe()">Click Here</button>
+<br> <br>
+
+<!-- *ngIF , *ngSwitch-->
+<div *ngIf="showMsg; else showElseMSg">Test Message</div>
+<ng-template #showElseMSg>Show Else Message</ng-template>
+
+
+<!-- *ngSwitch-->
+
+</div>
+</body>
