@@ -1,0 +1,23 @@
+<div class="contaier" style="margin-left: 30px;">
+    <!--Pipes Component -->
+<p>Pipes Component works here!</p>
+<h4>Built-In Pipes</h4>
+<h4> Date : {{dateToday}}<br>
+ Date Pipe : {{dateToday | date | uppercase}}
+</h4>
+
+<div>
+UserName : {{user.firstName | uppercase}} , {{user.lastName | uppercase}}
+</div>
+<div>
+   User DOB:  {{user.DOB | date:'MMMM dd YYYY'}}
+</div>
+<div>
+    User Salary: {{user.salary | currency:'€'}}
+</div>
+
+<code>{{ user | json }}</code>
+<br/>
+
+
+</div>
